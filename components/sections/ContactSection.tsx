@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Mail, Phone, Linkedin, Github } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -15,7 +15,9 @@ export default function ContactSection() {
         >
           <Mail className="w-12 h-12 text-blue-500 mx-auto mb-4" />
           <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-gray-400">Let's connect and create something amazing together</p>
+          <p className="text-gray-400">
+            Let's connect and create something amazing together
+          </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -51,7 +53,7 @@ export default function ContactSection() {
 
             <div className="flex justify-center space-x-6">
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/sr-joy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-blue-500/10 hover:bg-blue-500/20 transition-colors"
@@ -59,7 +61,7 @@ export default function ContactSection() {
                 <Linkedin className="w-6 h-6 text-blue-400" />
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/srj101"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-blue-500/10 hover:bg-blue-500/20 transition-colors"

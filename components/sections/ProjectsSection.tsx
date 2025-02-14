@@ -1,45 +1,48 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Code2, ExternalLink } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Code2, ExternalLink } from "lucide-react";
 
 export default function ProjectsSection() {
   const projects = [
     {
       title: "Quran Web Application",
-      description: "A modern, responsive Quran web application with dynamic API integration.",
+      description:
+        "A modern, responsive Quran web application with dynamic API integration.",
       link: "https://quran-wise.vercel.app",
       technologies: ["Next.js", "Tailwind CSS", "API Integration"],
       features: [
         "Dynamic API integration",
         "Real-time verse tracking",
         "Audio playback",
-        "Infinite scroll support"
-      ]
+        "Infinite scroll support",
+      ],
     },
     {
       title: "Transport System Dashboard",
-      description: "Advanced transport management system with real-time tracking.",
+      description:
+        "Advanced transport management system with real-time tracking.",
       link: "https://demo-transport.vercel.app",
       technologies: ["React", "AWS IoT", "GPS Integration"],
       features: [
         "Real-time GPS tracking",
         "Ticket booking",
         "GeoFence",
-        "Live bus tracking"
-      ]
+        "Live bus tracking",
+      ],
     },
     {
       title: "Smart Wallet",
-      description: "Digital wallet application with secure transaction capabilities.",
+      description:
+        "Digital wallet application with secure transaction capabilities.",
       link: "https://demo-wallet.vercel.app",
       technologies: ["React Native", "Node.js", "Stripe"],
       features: [
         "Secure transactions",
         "User authentication",
         "Payment integration",
-        "Transaction history"
-      ]
+        "Transaction history",
+      ],
     },
     {
       title: "Windows and Doors Website",
@@ -50,8 +53,8 @@ export default function ProjectsSection() {
         "Product catalog",
         "Custom quote system",
         "Responsive design",
-        "SEO optimization"
-      ]
+        "SEO optimization",
+      ],
     },
     {
       title: "Covid-19 Awareness Website",
@@ -62,32 +65,34 @@ export default function ProjectsSection() {
         "Real-time statistics",
         "Interactive maps",
         "Prevention guidelines",
-        "News updates"
-      ]
+        "News updates",
+      ],
     },
     {
       title: "Amazon Clone",
-      description: "Full-featured e-commerce platform with modern functionality.",
+      description:
+        "Full-featured e-commerce platform with modern functionality.",
       link: "#",
       technologies: ["React", "Firebase", "Stripe"],
       features: [
         "User authentication",
         "Shopping cart",
         "Payment processing",
-        "Order tracking"
-      ]
+        "Order tracking",
+      ],
     },
     {
       title: "Restaurant Website",
-      description: "Modern restaurant website with online ordering capabilities.",
+      description:
+        "Modern restaurant website with online ordering capabilities.",
       link: "#",
       technologies: ["Bootstrap", "JavaScript", "PHP"],
       features: [
         "Menu management",
         "Online ordering",
         "Table reservations",
-        "Customer reviews"
-      ]
+        "Customer reviews",
+      ],
     },
     {
       title: "Chatting Application",
@@ -98,20 +103,21 @@ export default function ProjectsSection() {
         "Real-time messaging",
         "File sharing",
         "User presence",
-        "Channel management"
-      ]
+        "Channel management",
+      ],
     },
     {
       title: "React Blog Website",
-      description: "Full-stack blog platform promoting environmental awareness.",
+      description:
+        "Full-stack blog platform promoting environmental awareness.",
       link: "#",
       technologies: ["React", "Node.js", "MongoDB"],
       features: [
         "User authentication",
         "Content management",
         "Comment system",
-        "Rich text editor"
-      ]
+        "Rich text editor",
+      ],
     },
     {
       title: "IoT Smart Dustbin System",
@@ -122,9 +128,9 @@ export default function ProjectsSection() {
         "Real-time monitoring",
         "Automated navigation",
         "Sensor integration",
-        "Remote control"
-      ]
-    }
+        "Remote control",
+      ],
+    },
   ];
 
   return (
@@ -151,11 +157,15 @@ export default function ProjectsSection() {
               className="group"
             >
               <div className="bg-black/50 backdrop-blur-md rounded-lg p-6 border border-blue-500/20 h-full transform transition-transform duration-300 hover:scale-105">
-                <h3 className="text-2xl font-bold mb-4 text-blue-400">{project.title}</h3>
+                <h3 className="text-2xl font-bold mb-4 text-blue-400">
+                  {project.title}
+                </h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
-                
+
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">Technologies:</h4>
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">
+                    Technologies:
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
                       <span
@@ -169,16 +179,24 @@ export default function ProjectsSection() {
                 </div>
 
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">Key Features:</h4>
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">
+                    Key Features:
+                  </h4>
                   <ul className="list-disc list-inside text-gray-400">
                     {project.features.map((feature, i) => (
-                      <li key={i} className="text-sm mb-1">{feature}</li>
+                      <li key={i} className="text-sm mb-1">
+                        {feature}
+                      </li>
                     ))}
                   </ul>
                 </div>
 
                 <a
-                  href="mailto:salimreza6835@gmail.com"
+                  href={
+                    project.link === "#"
+                      ? "mailto:salimreza6835@gmail.com"
+                      : project.link
+                  }
                   className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
                 >
                   Contact for Details <ExternalLink className="w-4 h-4 ml-2" />
