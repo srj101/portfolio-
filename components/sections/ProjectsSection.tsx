@@ -1,54 +1,103 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Code2, ExternalLink } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Code2, ExternalLink } from "lucide-react";
 
 export default function ProjectsSection() {
   const projects = [
     {
       title: "Quran Web Application",
-      description: "A modern, responsive Quran web application with dynamic API integration.",
+      description:
+        "A modern, responsive Quran web application with dynamic API integration.",
       link: "https://quran-wise.vercel.app",
       technologies: ["Next.js", "Tailwind CSS", "API Integration"],
       features: [
         "Dynamic API integration",
         "Real-time verse tracking",
         "Audio playback",
-        "Infinite scroll support"
-      ]
+        "Infinite scroll support",
+      ],
     },
     {
       title: "Windows and Doors Website",
-      description: "Designed responsive CSS styles and resolved technical issues, enhancing website aesthetics and functionality.",
+      description:
+        "Designed responsive CSS styles and resolved technical issues, enhancing website aesthetics and functionality.",
       link: "https://casabellawindows.ca",
       technologies: ["CSS", "HTML", "JavaScript"],
       features: [
         "Responsive design",
         "Technical issue resolution",
-        "Website enhancements"
-      ]
+        "Website enhancements",
+      ],
+    },
+    {
+      title: "SRTravels",
+      description:
+        "A modern and trend-setting travel & tourism React NextJS website designed for travel agencies and tour operators.",
+      link: "https://sr-travels.vercel.app",
+      technologies: ["React", "Next.js", "Tailwind CSS"],
+      features: [
+        "Tour and trip booking",
+        "Adventure tourism support",
+        "Modern UI/UX",
+      ],
+    },
+    {
+      title: "SR Academy",
+      description:
+        "A feature-rich Learning Management System (LMS) website built to revolutionize online education.",
+      link: "https://lms-website-seven.vercel.app/",
+      technologies: ["React", "Next.js", "MongoDB"],
+      features: [
+        "Course management",
+        "User authentication",
+        "Modern UI design",
+      ],
+    },
+    {
+      title: "JoyNFT",
+      description:
+        "Designed for NFT marketplaces, crypto collectibles, and digital art transactions.",
+      link: "https://joy-nft.vercel.app/",
+      technologies: ["React", "Next.js", "Blockchain"],
+      features: [
+        "NFT buying and selling",
+        "Crypto payment integration",
+        "Digital art marketplace",
+      ],
+    },
+    {
+      title: "Company Dashboard",
+      description:
+        "A web-based dashboard application with role-based authentication.",
+      link: "https://company-dashboard-multi-auth.vercel.app/",
+      technologies: ["React", "Redux", "Firebase"],
+      features: [
+        "Role-based authentication",
+        "Admin and client dashboards",
+        "Sales and operations management",
+      ],
     },
     {
       title: "Transport System Dashboard",
-      description: "Advanced transport management system with real-time tracking.",
+      description:
+        "Advanced transport management system with real-time tracking.",
       link: "http://smart-transport.vercel.app",
       technologies: ["React", "AWS IoT", "GPS Integration"],
       features: [
         "Real-time GPS tracking",
         "Ticket booking",
         "GeoFence",
-        "Live bus tracking"
-      ]
+        "Live bus tracking",
+      ],
     },
     {
       title: "Covid-19 Awareness Website",
-      description: "Developed an informational website to spread awareness during the pandemic.",
+      description:
+        "Developed an informational website to spread awareness during the pandemic.",
       link: "https://srj101.github.io/covid-19/",
       technologies: ["HTML", "CSS", "JavaScript"],
-      features: [
-        "Informational content",
-        "User-friendly interface"
-      ]
+      features: ["Informational content", "User-friendly interface"],
     },
     {
       title: "Smart Wallet",
@@ -59,63 +108,65 @@ export default function ProjectsSection() {
         "Secure transactions",
         "User authentication",
         "Payment integration",
-        "Transaction history"
-      ]
+        "Transaction history",
+      ],
     },
     {
       title: "Amazon Clone",
-      description: "Developed a full-fledged e-commerce website with features like Stripe payments and Google authentication.",
+      description:
+        "Developed a full-fledged e-commerce website with features like Stripe payments and Google authentication.",
       link: "https://6160131031c5f500e9fa92c6--srjoyamazonclone.netlify.app/",
       technologies: ["React", "Firebase", "Stripe"],
       features: [
         "Stripe payments",
         "Google authentication",
-        "E-commerce functionality"
-      ]
+        "E-commerce functionality",
+      ],
     },
     {
       title: "Restaurant Website",
-      description: "Designed and implemented a responsive website with Bootstrap.",
+      description:
+        "Designed and implemented a responsive website with Bootstrap.",
       link: "https://srj101.github.io/Restaurent-website",
       technologies: ["HTML", "CSS", "Bootstrap"],
-      features: [
-        "Responsive design",
-        "Online presence for a local restaurant"
-      ]
+      features: ["Responsive design", "Online presence for a local restaurant"],
     },
     {
       title: "Chatting Application",
-      description: "StreamChat-powered app supporting direct and channel messaging.",
+      description:
+        "StreamChat-powered app supporting direct and channel messaging.",
       link: "#",
       technologies: ["React", "StreamChat API"],
       features: [
         "Real-time updates",
         "Attachment support",
-        "Direct and channel messaging"
-      ]
+        "Direct and channel messaging",
+      ],
     },
     {
       title: "React Blog Website",
-      description: "Built a full-stack application to promote tree planting and sustainability.",
+      description:
+        "Built a full-stack application to promote tree planting and sustainability.",
       link: "#",
       technologies: ["React", "Node.js", "Express.js"],
       features: [
         "User authentication",
         "Dynamic content",
-        "Full-stack application"
-      ]
+        "Full-stack application",
+      ],
     },
     {
       title: "IoT-Driven Smart Line Following Dustbin System",
-      description: "Designed and implemented an IoT-enabled smart line-following dustbin using ESP32 and AWS IoT.",
+      description:
+        "Designed and implemented an IoT-enabled smart line-following dustbin using ESP32 and AWS IoT.",
       link: null,
       technologies: ["ESP32", "AWS IoT", "Sensor Integration"],
       features: [
         "Real-time automation",
         "Monitoring",
-        "Sensor and actuator integration"
-      ]
-    }
+        "Sensor and actuator integration",
+      ],
+    },
   ];
 
   return (
@@ -142,11 +193,15 @@ export default function ProjectsSection() {
               className="group"
             >
               <div className="card-3d bg-black/50 backdrop-blur-md rounded-lg p-6 border border-blue-500/20 h-full neon-glow">
-                <h3 className="text-2xl font-bold mb-4 text-blue-400">{project.title}</h3>
+                <h3 className="text-2xl font-bold mb-4 text-blue-400">
+                  {project.title}
+                </h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
-                
+
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">Technologies:</h4>
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">
+                    Technologies:
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
                       <motion.span
@@ -163,10 +218,14 @@ export default function ProjectsSection() {
                 </div>
 
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">Key Features:</h4>
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">
+                    Key Features:
+                  </h4>
                   <ul className="list-disc list-inside text-gray-400">
                     {project.features.map((feature, i) => (
-                      <li key={i} className="text-sm mb-1">{feature}</li>
+                      <li key={i} className="text-sm mb-1">
+                        {feature}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -177,7 +236,8 @@ export default function ProjectsSection() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  {project.link ? "View Project" : "Contact for Details"} <ExternalLink className="w-4 h-4 ml-2" />
+                  {project.link ? "View Project" : "Contact for Details"}{" "}
+                  <ExternalLink className="w-4 h-4 ml-2" />
                 </a>
               </div>
             </motion.div>
