@@ -4,6 +4,21 @@ import { motion } from 'framer-motion';
 import { Terminal } from 'lucide-react';
 
 export default function HeroSection() {
+	const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
+  const handleClick = (href: string, event: React.MouseEvent) => {
+    event.preventDefault();
+    const id = href.substring(1);
+    scrollToSection(id);
+  };
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -53,7 +68,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="space-x-4"
+            className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4"
           >
             <a
               href="mailto:salimreza6835@gmail.com"
@@ -62,7 +77,8 @@ export default function HeroSection() {
               Get in Touch
             </a>
             <a
-              href="mailto:salimreza6835@gmail.com"
+              href="#projects"
+							onClick={(event) => handleClick("#projects", event)}
               className="inline-block px-8 py-3 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-colors"
             >
               View Projects

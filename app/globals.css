@@ -55,6 +55,13 @@
     cursor: none;
     overflow-x: hidden;
     min-height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+
+  body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
   }
 }
 
@@ -91,7 +98,7 @@
 
 .custom-cursor-dot {
   width: 4px;
-  height: 4px;
+height: 4px;
   background: rgba(0, 64, 255, 1);
   border-radius: 50%;
   position: fixed;

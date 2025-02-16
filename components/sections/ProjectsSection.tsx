@@ -18,9 +18,20 @@ export default function ProjectsSection() {
       ]
     },
     {
+      title: "Windows and Doors Website",
+      description: "Designed responsive CSS styles and resolved technical issues, enhancing website aesthetics and functionality.",
+      link: "https://casabellawindows.ca",
+      technologies: ["CSS", "HTML", "JavaScript"],
+      features: [
+        "Responsive design",
+        "Technical issue resolution",
+        "Website enhancements"
+      ]
+    },
+    {
       title: "Transport System Dashboard",
       description: "Advanced transport management system with real-time tracking.",
-      link: "https://demo-transport.vercel.app",
+      link: "http://smart-transport.vercel.app",
       technologies: ["React", "AWS IoT", "GPS Integration"],
       features: [
         "Real-time GPS tracking",
@@ -30,15 +41,79 @@ export default function ProjectsSection() {
       ]
     },
     {
+      title: "Covid-19 Awareness Website",
+      description: "Developed an informational website to spread awareness during the pandemic.",
+      link: "https://srj101.github.io/covid-19/",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      features: [
+        "Informational content",
+        "User-friendly interface"
+      ]
+    },
+    {
       title: "Smart Wallet",
-      description: "Digital wallet application with secure transaction capabilities.",
-      link: "https://demo-wallet.vercel.app",
+      description: "Created a digital wallet using React Native.",
+      link: "https://shorturl.at/wnE0r",
       technologies: ["React Native", "Node.js", "Stripe"],
       features: [
         "Secure transactions",
         "User authentication",
         "Payment integration",
         "Transaction history"
+      ]
+    },
+    {
+      title: "Amazon Clone",
+      description: "Developed a full-fledged e-commerce website with features like Stripe payments and Google authentication.",
+      link: "https://6160131031c5f500e9fa92c6--srjoyamazonclone.netlify.app/",
+      technologies: ["React", "Firebase", "Stripe"],
+      features: [
+        "Stripe payments",
+        "Google authentication",
+        "E-commerce functionality"
+      ]
+    },
+    {
+      title: "Restaurant Website",
+      description: "Designed and implemented a responsive website with Bootstrap.",
+      link: "https://srj101.github.io/Restaurent-website",
+      technologies: ["HTML", "CSS", "Bootstrap"],
+      features: [
+        "Responsive design",
+        "Online presence for a local restaurant"
+      ]
+    },
+    {
+      title: "Chatting Application",
+      description: "StreamChat-powered app supporting direct and channel messaging.",
+      link: "#",
+      technologies: ["React", "StreamChat API"],
+      features: [
+        "Real-time updates",
+        "Attachment support",
+        "Direct and channel messaging"
+      ]
+    },
+    {
+      title: "React Blog Website",
+      description: "Built a full-stack application to promote tree planting and sustainability.",
+      link: "#",
+      technologies: ["React", "Node.js", "Express.js"],
+      features: [
+        "User authentication",
+        "Dynamic content",
+        "Full-stack application"
+      ]
+    },
+    {
+      title: "IoT-Driven Smart Line Following Dustbin System",
+      description: "Designed and implemented an IoT-enabled smart line-following dustbin using ESP32 and AWS IoT.",
+      link: null,
+      technologies: ["ESP32", "AWS IoT", "Sensor Integration"],
+      features: [
+        "Real-time automation",
+        "Monitoring",
+        "Sensor and actuator integration"
       ]
     }
   ];
