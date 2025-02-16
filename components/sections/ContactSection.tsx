@@ -53,7 +53,7 @@ export default function ContactSection() {
 
             <div className="flex justify-center space-x-6">
               <a
-                href="https://linkedin.com/in/sr-joy"
+                href="https://www.linkedin.com/in/sr-joy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-blue-500/10 hover:bg-blue-500/20 transition-colors"
