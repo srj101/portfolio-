@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { GraduationCap, Award, Calendar } from 'lucide-react';
+import { motion } from "framer-motion";
+import { GraduationCap, Award, Calendar } from "lucide-react";
 
 export default function EducationSection() {
   const education = [
@@ -14,8 +14,8 @@ export default function EducationSection() {
         "Honored with a Technical Scholarship for three semesters",
         "Actively participated in coding competitions and hackathons",
         "Member of DIU HIRL Lab (Health & Informatics Research)",
-        "Organizer of DIU IoT Club"
-      ]
+        "Organizer of DIU IoT Club",
+      ],
     },
     {
       degree: "Higher Secondary Certificate",
@@ -25,8 +25,8 @@ export default function EducationSection() {
       achievements: [
         "Science Group",
         "Participated in various academic competitions",
-        "Active member of the Science Club"
-      ]
+        "Active member of the Science Club",
+      ],
     },
     {
       degree: "Secondary School Certificate",
@@ -36,13 +36,13 @@ export default function EducationSection() {
       achievements: [
         "Achieved perfect GPA",
         "Class representative",
-        "Active participation in extracurricular activities"
-      ]
-    }
+        "Active participation in extracurricular activities",
+      ],
+    },
   ];
 
   return (
-    <section id="education" className="py-20 relative">
+    <section id="education" className="min-h-screen py-20 relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
@@ -66,7 +66,9 @@ export default function EducationSection() {
             >
               <div className="bg-black/50 backdrop-blur-md rounded-lg p-6 border border-blue-500/20">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-blue-400">{edu.degree}</h3>
+                  <h3 className="text-2xl font-bold text-blue-400">
+                    {edu.degree}
+                  </h3>
                   <div className="flex items-center text-gray-400">
                     <Calendar className="w-4 h-4 mr-2" />
                     {edu.period}
@@ -76,7 +78,9 @@ export default function EducationSection() {
                 <p className="text-lg text-blue-400 mb-4">{edu.gpa}</p>
                 <ul className="list-disc list-inside text-gray-400">
                   {edu.achievements.map((achievement, i) => (
-                    <li key={i} className="mb-2">{achievement}</li>
+                    <li key={i} className="mb-2">
+                      {achievement}
+                    </li>
                   ))}
                 </ul>
               </div>
