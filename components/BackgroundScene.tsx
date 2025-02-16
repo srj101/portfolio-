@@ -1,18 +1,21 @@
 "use client";
 
-import { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { Float } from '@react-three/drei';
-import { MotionValue, useTransform } from 'framer-motion';
-import { motion } from 'framer-motion-3d';
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { Float } from "@react-three/drei";
+import { MotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion-3d";
+import * as THREE from "three";
 
 interface BackgroundSceneProps {
   scrollProgress: MotionValue<number>;
 }
 
-export default function BackgroundScene({ scrollProgress }: BackgroundSceneProps) {
+export default function BackgroundScene({
+  scrollProgress,
+}: BackgroundSceneProps) {
   const meshRef = useRef<THREE.Mesh>(null);
-  
+
   const rotationX = useTransform(scrollProgress, [0, 1], [0, Math.PI * 2]);
   const rotationY = useTransform(scrollProgress, [0, 1], [0, Math.PI * 4]);
   const positionZ = useTransform(scrollProgress, [0, 0.5, 1], [-5, -10, -5]);
@@ -33,7 +36,7 @@ export default function BackgroundScene({ scrollProgress }: BackgroundSceneProps
       >
         <mesh ref={meshRef} position={[0, 0, -5]}>
           <torusKnotGeometry args={[9, 3, 768, 3, 4, 3]} />
-          <meshPhongMaterial 
+          <meshPhongMaterial
             color="#0040ff"
             wireframe
             emissive="#0040ff"
