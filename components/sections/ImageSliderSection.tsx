@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 
 const images = [
-  "/images/image1.jpg",
+  "/images/image1.JPG",
   "/images/image2.jpg",
   "/images/image3.jpg",
   "/images/image4.jpg",
