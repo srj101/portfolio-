@@ -1,75 +1,105 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Briefcase, Calendar } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Briefcase, Calendar } from "lucide-react";
 
 export default function ExperienceSection() {
   const experiences = [
     {
+      title: "Senior Software Engineer",
+      company: "digiground.com.au",
+      period: "2024 - Ongoing",
+      description:
+        "Develop and maintain full-stack web applications using React.js/Next.js for dynamic UIs, Node.js and Python for backend services, and manage cloud deployments and server configurations as needed.",
+      achievements: [
+        "Contributing to the development of a new SaaS platform",
+        "Web scraping and data analysis for SaaS projects",
+        "Managed cloud deployments and server configurations",
+        "Increased project efficiency by 30%",
+      ],
+    },
+    {
+      title: "Lead Instructor - React & Next.js",
+      company: "Ostad.app",
+      period: "2025 - ongoing",
+      description:
+        "Teaching advanced React and Next.js concepts to students in a virtual classroom setting.",
+      achievements: [
+        "Developing curriculum for advanced React and Next.js courses",
+        "Mentoring students on real-world projects",
+        "Creating a supportive learning environment",
+      ],
+    },
+    {
       title: "CEO & Founder",
       company: "Sleekfusions LTD",
       period: "Ongoing",
-      description: "Established and managed international health and beauty e-commerce platforms.",
+      description:
+        "Established and managed international health and beauty e-commerce platforms.",
       achievements: [
         "Directed marketing campaigns that increased brand awareness by 40%",
         "Supervised customer service and product launches",
         "Maintained 95% customer satisfaction rate",
         "Expanded business operations to diverse markets",
-        "Platforms include Sleekfusion.shop and Sleekphones.shop"
-      ]
+        "Platforms include Sleekfusion.shop and Sleekphones.shop",
+      ],
     },
     {
       title: "Freelance Web Developer",
       company: "Fiverr & Upwork",
       period: "2022 - 2023",
-      description: "Delivered custom web development solutions for diverse international clients.",
+      description:
+        "Delivered custom web development solutions for diverse international clients.",
       achievements: [
         "Built dynamic interfaces using React and Next.js",
         "Integrated various APIs for enhanced functionality",
         "Earned recognition for exceptional communication",
         "Maintained 5-star rating across platforms",
-        "Successfully completed 50+ projects"
-      ]
+        "Successfully completed 50+ projects",
+      ],
     },
     {
       title: "Web Developer",
       company: "Duber.uk",
       period: "2022",
-      description: "Developed innovative features for a UK-based drone freelance platform.",
+      description:
+        "Developed innovative features for a UK-based drone freelance platform.",
       achievements: [
         "Developed two portals & landing page",
         "Implemented client-side hiring system",
         "Integrated mapbox with turf.js",
         "Optimized platform performance",
-        "Enhanced user experience"
-      ]
+        "Enhanced user experience",
+      ],
     },
     {
       title: "Content Writer",
       company: "Hashnode",
       period: "Ongoing",
-      description: "Technical blog writer focusing on emerging technologies and development practices.",
+      description:
+        "Technical blog writer focusing on emerging technologies and development practices.",
       achievements: [
         "Published comprehensive technical articles",
         "Built strong community following",
         "Shared in-depth development insights",
         "Contributed to developer education",
-        "Created practical coding tutorials"
-      ]
+        "Created practical coding tutorials",
+      ],
     },
     {
       title: "Organizer",
       company: "DIU IoT Club",
       period: "2023",
-      description: "Led organization of major IoT events and educational initiatives.",
+      description:
+        "Led organization of major IoT events and educational initiatives.",
       achievements: [
         "Organized IoT FEST 2023 with 500+ participants",
         "Spearheaded community initiatives",
         "Mentored team members",
         "Coordinated workshops and seminars",
-        "Fostered innovation in IoT"
-      ]
-    }
+        "Fostered innovation in IoT",
+      ],
+    },
   ];
 
   return (
@@ -97,7 +127,9 @@ export default function ExperienceSection() {
             >
               <div className="bg-black/50 backdrop-blur-md rounded-lg p-6 border border-blue-500/20">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-blue-400">{exp.title}</h3>
+                  <h3 className="text-2xl font-bold text-blue-400">
+                    {exp.title}
+                  </h3>
                   <div className="flex items-center text-gray-400">
                     <Calendar className="w-4 h-4 mr-2" />
                     {exp.period}
@@ -107,7 +139,9 @@ export default function ExperienceSection() {
                 <p className="text-gray-400 mb-4">{exp.description}</p>
                 <ul className="list-disc list-inside text-gray-400">
                   {exp.achievements.map((achievement, i) => (
-                    <li key={i} className="mb-2">{achievement}</li>
+                    <li key={i} className="mb-2">
+                      {achievement}
+                    </li>
                   ))}
                 </ul>
               </div>
